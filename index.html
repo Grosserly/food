@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8"/>
+	<title>food</title>
+	<meta name="description" content="" />
+	
+	<script src="js/swfobject.js"></script>
+	<script>
+		var flashvars = {
+		};
+		var params = {
+			menu:  "false",
+			scale: "showAll",
+			allowFullscreen:   "true",
+			allowScriptAccess: "always",
+			bgcolor: "#000000",
+			wmode:   "direct" // can cause issues with FP settings & webcam
+		};
+		var attributes = {
+			id: "food"
+		};
+		swfobject.embedSWF(
+			"food.swf", 
+			"altContent", "1336px", "768px", "10.0.0", 
+			"expressInstall.swf", 
+			flashvars, params, attributes);
+	</script>
+	<style>
+		html, body { height:100%; overflow:hidden;}
+		body { margin:0; }
+	</style>
+</head>
+<body>
+	<div id="altContent">
+		<h1>It broke</h1>
+	</div>
+</body>
+</html>
